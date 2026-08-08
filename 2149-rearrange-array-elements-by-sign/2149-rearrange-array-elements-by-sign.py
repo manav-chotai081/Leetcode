@@ -21,23 +21,34 @@ class Solution:
 
         # return nums
 
-        pos = []
+        # pos = []
+        # neg = []
+        # ans = []
+        # for i in nums:
+        #     if i < 0:
+        #         neg.append(i)
+        #     else:
+        #         pos.append(i)
+        # c1 = 0
+        # c2 = 0
+        # for i in range(len(nums)):
+        #     if i % 2 == 0:
+        #         ans.append(pos[c1])
+        #         c1 += 1
+        #     else:
+        #         ans.append(neg[c2])
+        #         c2 += 1
+        # return ans
         neg = []
-        ans = []
-        for i in nums:
-            if i < 0:
-                neg.append(i)
+        pos = []
+        for n in nums:
+            if(n<0):
+                neg.append(n)
             else:
-                pos.append(i)
-        c1 = 0
-        c2 = 0
-        for i in range(len(nums)):
-            if i % 2 == 0:
-                ans.append(pos[c1])
-                c1 += 1
-            else:
-                ans.append(neg[c2])
-                c2 += 1
+                pos.append(n)
+        ans = [0]*(len(nums))
+        ans[0::2] = pos
+        ans[1::2] = neg
         return ans
 
 
