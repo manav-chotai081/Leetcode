@@ -14,6 +14,18 @@ class Solution:
             else:
                 return False
         return True
+
+
+        # len1 = len(t)
+        # len2 = len(s)
+        # if len1 != len2:
+        #     return False
+        # for i in range(len1):
+        #     if t[i] in s:
+        #         s.replace(t[i], '', 1)
+        #     else:
+        #         return False
+        # return True
         
 
 
