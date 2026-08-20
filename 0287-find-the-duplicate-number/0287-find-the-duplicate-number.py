@@ -8,7 +8,4 @@ class Solution:
             if nums[i] != num[j]:
                 return nums[i]
             j += 1
-        return nums[len(nums)-1]
-
-            
-        
+        return nums[len(nums) - 1]
