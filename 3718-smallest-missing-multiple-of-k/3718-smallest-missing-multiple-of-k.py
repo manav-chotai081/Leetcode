@@ -1,7 +1,10 @@
 class Solution:
     def missingMultiple(self, nums: List[int], k: int) -> int:
         temp = k
-        while True:
-            if k not in nums:
+        for i in nums:
+            if k in nums:
+                k += temp
+            else:
                 return k
-            k += temp     
+        return k
+        
