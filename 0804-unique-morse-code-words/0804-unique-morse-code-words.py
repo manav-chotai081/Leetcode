@@ -1,6 +1,7 @@
 class Solution:
     def uniqueMorseRepresentations(self, words: List[str]) -> int:
         ans = []
+        temp = ''
         for i in words:
             temp = ''
             for j in i:
