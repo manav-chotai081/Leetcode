@@ -57,7 +57,7 @@ class Solution:
                 mat[i][j] = count
                 i += 1
                 j += 1
-        for k in range(m):
+        for k in range(m-1):
             ans = []
             col += 1
             i = 0
