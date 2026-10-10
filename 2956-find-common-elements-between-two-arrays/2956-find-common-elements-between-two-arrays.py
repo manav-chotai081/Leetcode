@@ -9,4 +9,3 @@ class Solution:
             if i in nums1:
                 count2 += 1
         return [count1, count2]
-        
